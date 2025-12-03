@@ -263,7 +263,7 @@ export const Contact = () => {
             <div className="flex items-center gap-2">
               <Phone className="h-5 w-5 text-primary" />
               <span className="text-sm">
-                Atendimento: Segunda a Sexta, 8h às 18h
+                Atendimento: Segunda a Sexta, 8h às 18h - Sábado 08h às 12h
               </span>
             </div>
             <div className="w-1 h-1 bg-gray-300 rounded-full"></div>

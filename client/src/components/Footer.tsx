@@ -270,7 +270,7 @@ export const Footer = () => {
 
             <div className="flex items-center gap-4">
               <span className="text-background/60 text-sm">
-                CNPJ: 00.000.000/0001-00
+                CNPJ: 40.484.468/0001-13
               </span>
               <button
                 onClick={scrollToTop}

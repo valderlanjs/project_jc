@@ -196,7 +196,7 @@ export const Footer = () => {
                 <div>
                   <span className="text-background/80 block">Email</span>
                   <span className="text-white font-medium">
-                    jean.madenobre@gmail.com
+                    contato@jeancarlos.com
                   </span>
                 </div>
               </li>
@@ -207,7 +207,7 @@ export const Footer = () => {
                 <div>
                   <span className="text-background/80 block">Endereço</span>
                   <span className="text-white font-medium">
-                    Maceió, AL - Brasil
+                    Av. Governador Lamenha Filho, 1800 - Quadra D, Lote 17 a 20 | Feitosa - Maceió - AL | 57043-600
                   </span>
                 </div>
               </li>

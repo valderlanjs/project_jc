@@ -2,7 +2,7 @@ import consultantImage from "../assets/PerfilJean.png";
 import { CheckCircle2, Star, Award, Users, Target } from "lucide-react";
 
 const benefits = [
-  "Mais de 15 anos de experiência no mercado",
+  "Mais de 5 anos de experiência no mercado",
   "Consultoria técnica especializada",
   "Produtos certificados e sustentáveis",
   "Atendimento personalizado",
@@ -11,7 +11,7 @@ const benefits = [
 
 const stats = [
   { icon: Users, value: "500+", label: "Clientes Satisfeitos" },
-  { icon: Target, value: "15+", label: "Anos de Experiência" },
+  { icon: Target, value: "5+", label: "Anos de Experiência" },
   { icon: Award, value: "100%", label: "Qualidade Garantida" }
 ];
 

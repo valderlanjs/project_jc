@@ -185,7 +185,7 @@ export const Footer = () => {
                 <div>
                   <span className="text-background/80 block">Telefone</span>
                   <span className="text-white font-medium">
-                    (11) 99999-9999
+                    (82) 9829-5404
                   </span>
                 </div>
               </li>
@@ -196,7 +196,7 @@ export const Footer = () => {
                 <div>
                   <span className="text-background/80 block">Email</span>
                   <span className="text-white font-medium">
-                    contato@madeireirapro.com
+                    jean.madenobre@gmail.com
                   </span>
                 </div>
               </li>
@@ -207,7 +207,7 @@ export const Footer = () => {
                 <div>
                   <span className="text-background/80 block">Endereço</span>
                   <span className="text-white font-medium">
-                    São Paulo, SP - Brasil
+                    Maceió, AL - Brasil
                   </span>
                 </div>
               </li>
@@ -246,6 +246,13 @@ export const Footer = () => {
               group/cta
               whitespace-nowrap
             "
+              onClick={() =>
+                window.open(
+                  "https://wa.me/558298295404?text=Olá! Vim pelo site e gostaria de falar com um especialista.",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
             >
               <MessageCircle className="h-5 w-5" />
               Falar com Especialista
@@ -258,7 +265,7 @@ export const Footer = () => {
         <div className="pt-8 border-t border-background/20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-background/70 text-center md:text-left">
-              © {currentYear} Madeireira Pro. Todos os direitos reservados.
+              © {currentYear} Jean Carlos. Todos os direitos reservados.
             </p>
 
             <div className="flex items-center gap-4">

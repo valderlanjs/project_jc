@@ -4,10 +4,13 @@ import { Phone, MessageCircle } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-16">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center overflow-hidden pt-16"
+    >
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
+        <img
+          src={heroImage}
           alt="Madeiras de alta qualidade"
           className="w-full h-full object-cover"
         />
@@ -24,37 +27,45 @@ export const Hero = () => {
               Madeiras Nobres
             </span>
           </h1>
-          
+
           <div className="w-16 h-0.5 bg-primary/60 mb-6"></div>
 
           <p className="max-w-2xl text-xl md:text-2xl text-white/90 mb-10 leading-relaxed font-light">
-            Transforme seu projeto com madeiras de altíssima qualidade e acabamento impecável.
+            Transforme seu projeto com madeiras de altíssima qualidade e
+            acabamento impecável.
           </p>
 
           {/* Botão Compacto e Moderno */}
-          <Button 
+          <Button
             size="default"
             className="
-              group
-              bg-white/80
-              border 
-              border-primary
-              text-primary
-              hover:bg-primary
-              hover:text-white
-              hover:border-primary
-              hover:shadow-lg
-              hover:shadow-primary/30
-              transition-all 
-              duration-400 
-              ease-in-out
-              px-6 
-              py-4
-              text-base
-              font-medium
-              rounded-xl
-              backdrop-blur-sm
-            "
+    group
+    bg-white/80
+    border 
+    border-primary
+    text-primary
+    hover:bg-primary
+    hover:text-white
+    hover:border-primary
+    hover:shadow-lg
+    hover:shadow-primary/30
+    transition-all 
+    duration-400 
+    ease-in-out
+    px-6 
+    py-4
+    text-base
+    font-medium
+    rounded-xl
+    backdrop-blur-sm
+  "
+            onClick={() =>
+              window.open(
+                "https://wa.me/558298295404?text=Olá! Vim pelo site e gostaria de falar com um especialista.",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
           >
             <span className="flex items-center gap-2">
               <MessageCircle className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
@@ -64,7 +75,8 @@ export const Hero = () => {
 
           <div className="mt-10">
             <p className="text-white/60 text-sm font-light">
-              ✓ Atendimento personalizado ✓ Materiais certificados ✓ Garantia de qualidade
+              ✓ Atendimento personalizado ✓ Materiais certificados ✓ Garantia de
+              qualidade
             </p>
           </div>
         </div>

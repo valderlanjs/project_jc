@@ -1,59 +1,72 @@
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
-import { Mail, Phone, MessageCircle, Star, ArrowRight, Users } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MessageCircle,
+  Star,
+  ArrowRight,
+  Users,
+} from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import seller1 from "../assets/v1.jpg";
 import seller2 from "../assets/v2.jpg";
 import seller3 from "../assets/v3.jpg";
 
 const sellers = [
   {
-    name: "Carlos Silva",
-    email: "carlos.silva@email.com",
-    whatsapp: "(11) 98765-4321",
+    name: "José Darlisson",
+    email: "jose.darlisson@gmail.com",
+    whatsapp: "(82) 9351-5853",
     photo: seller1,
-    specialty: "Especialista em Madeiras Nobres",
-    experience: "12 anos"
+    specialty: "Vendedor",
+    experience: "Online",
   },
   {
-    name: "Ana Santos",
-    email: "ana.santos@email.com",
-    whatsapp: "(11) 98765-4322",
+    name: "Érica Vieira",
+    email: "erica.vieira@gmail.com",
+    whatsapp: "(82) 9351-5853",
     photo: seller2,
-    specialty: "Consultora de Projetos",
-    experience: "8 anos"
+    specialty: "Assistente de Vendas",
+    experience: "Online",
   },
   {
-    name: "Roberto Oliveira",
-    email: "roberto.oliveira@email.com",
-    whatsapp: "(11) 98765-4323",
+    name: "Iago Tailan",
+    email: "iago.tailan@email.com",
+    whatsapp: "(82) 9351-5853",
     photo: seller3,
-    specialty: "Gerente Comercial",
-    experience: "15 anos"
-  }
+    specialty: "Auxiliar de Escritório",
+    experience: "Online",
+  },
 ];
 
 export const Contact = () => {
   const handleWhatsApp = (phone: string) => {
-    const cleanPhone = phone.replace(/\D/g, '');
-    window.open(`https://wa.me/55${cleanPhone}`, '_blank');
+    const cleanPhone = phone.replace(/\D/g, "");
+    window.open(`https://wa.me/55${cleanPhone}`, "_blank");
   };
 
   const handleEmail = (email: string) => {
-    window.open(`mailto:${email}`, '_blank');
+    window.open(`mailto:${email}`, "_blank");
   };
 
   return (
-    <section id="contato" className="py-24 px-4 relative overflow-hidden bg-gradient-to-br from-background to-gray-50/50">
+    <section
+      id="contato"
+      className="py-24 px-4 relative overflow-hidden bg-gradient-to-br from-background to-gray-50/50"
+    >
       {/* Background Elements */}
       <div className="absolute top-10 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10"></div>
-      
+
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full px-6 py-3 mb-6">
             <Users className="h-5 w-5 text-primary fill-current" />
-            <span className="text-sm font-semibold text-primary">Equipe Especializada</span>
+            <span className="text-sm font-semibold text-primary">
+              Equipe Especializada
+            </span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
             <span className="bg-gradient-to-r from-foreground to-gray-600 bg-clip-text text-transparent">
@@ -62,16 +75,16 @@ export const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Converse diretamente com nossos consultores especializados e receba atendimento 
-            personalizado para seu projeto.
+            Converse diretamente com nossos consultores especializados e receba
+            atendimento personalizado para seu projeto.
           </p>
         </div>
 
         {/* Sellers Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {sellers.map((seller, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="
                 group relative
                 bg-white/60 backdrop-blur-sm
@@ -88,14 +101,14 @@ export const Contact = () => {
             >
               {/* Efeito de brilho no hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
-              
+
               <CardContent className="pt-8 pb-6">
                 <div className="text-center">
                   {/* Photo Container */}
                   <div className="relative w-32 h-32 mx-auto mb-6">
                     <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-xl opacity-60" />
-                    <img 
-                      src={seller.photo} 
+                    <img
+                      src={seller.photo}
                       alt={seller.name}
                       className="
                         relative 
@@ -112,7 +125,8 @@ export const Contact = () => {
                       "
                     />
                     {/* Experience Badge */}
-                    <div className="
+                    <div
+                      className="
                       absolute 
                       -bottom-2 
                       -right-2 
@@ -126,11 +140,12 @@ export const Contact = () => {
                       text-xs 
                       font-bold 
                       shadow-lg
-                    ">
+                    "
+                    >
                       {seller.experience}
                     </div>
                   </div>
-                  
+
                   {/* Name and Specialty */}
                   <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {seller.name}
@@ -138,10 +153,10 @@ export const Contact = () => {
                   <p className="text-sm text-primary font-semibold mb-4 bg-primary/10 rounded-full px-3 py-1 inline-block">
                     {seller.specialty}
                   </p>
-                  
+
                   {/* Contact Info */}
                   <div className="space-y-3 mb-6">
-                    <button 
+                    <button
                       onClick={() => handleEmail(seller.email)}
                       className="
                         flex 
@@ -156,7 +171,10 @@ export const Contact = () => {
                         group/email
                       "
                     >
-                      <Mail size={18} className="text-primary group-hover/email:scale-110 transition-transform" />
+                      <Mail
+                        size={18}
+                        className="text-primary group-hover/email:scale-110 transition-transform"
+                      />
                       <span className="text-sm">{seller.email}</span>
                     </button>
                     <div className="flex items-center justify-center gap-2 text-muted-foreground">
@@ -166,7 +184,7 @@ export const Contact = () => {
                   </div>
 
                   {/* WhatsApp Button */}
-                  <Button 
+                  <Button
                     className="
                       w-full 
                       bg-gradient-to-r from-[#25D366] to-[#128C7E] 
@@ -182,7 +200,7 @@ export const Contact = () => {
                     "
                     onClick={() => handleWhatsApp(seller.whatsapp)}
                   >
-                    <MessageCircle className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                    <FaWhatsapp className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
                     Chamar no WhatsApp
                   </Button>
                 </div>
@@ -199,10 +217,11 @@ export const Contact = () => {
                 Não sabe por onde começar?
               </h3>
               <p className="text-muted-foreground text-lg">
-                Solicite um orçamento completo e nossa equipe entrará em contato para entender suas necessidades.
+                Solicite um orçamento completo e nossa equipe entrará em contato
+                para entender suas necessidades.
               </p>
             </div>
-            <Button 
+            <Button
               size="lg"
               className="
                 bg-primary
@@ -224,6 +243,13 @@ export const Contact = () => {
                 gap-2
                 group/cta
               "
+              onClick={() =>
+                window.open(
+                  "https://wa.me/558298295404?text=Olá! Vim pelo site e gostaria de falar com um especialista.",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
             >
               <span>Solicitar Orçamento</span>
               <ArrowRight className="h-5 w-5 group-hover/cta:translate-x-1 transition-transform" />
@@ -236,12 +262,14 @@ export const Contact = () => {
           <div className="inline-flex items-center gap-6 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Phone className="h-5 w-5 text-primary" />
-              <span className="text-sm">Atendimento: Segunda a Sexta, 8h às 18h</span>
+              <span className="text-sm">
+                Atendimento: Segunda a Sexta, 8h às 18h
+              </span>
             </div>
             <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
             <div className="flex items-center gap-2">
               <Mail className="h-5 w-5 text-primary" />
-              <span className="text-sm">contato@madeireirapro.com</span>
+              <span className="text-sm">contato@jeancarlos.com</span>
             </div>
           </div>
         </div>

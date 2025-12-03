@@ -16,15 +16,15 @@ import seller3 from "../assets/v3.jpg";
 const sellers = [
   {
     name: "José Darlisson",
-    email: "jose.darlisson@gmail.com",
-    whatsapp: "(82) 9351-5853",
+    email: "jeancarlos2008@hotmail.com",
+    whatsapp: "(82) 9416-1740",
     photo: seller1,
     specialty: "Vendedor",
     experience: "Online",
   },
   {
     name: "Érica Vieira",
-    email: "erica.vieira@gmail.com",
+    email: "jeancarlos2008@hotmail.com",
     whatsapp: "(82) 9351-5853",
     photo: seller2,
     specialty: "Assistente de Vendas",
@@ -32,8 +32,8 @@ const sellers = [
   },
   {
     name: "Iago Tailan",
-    email: "iago.tailan@email.com",
-    whatsapp: "(82) 9351-5853",
+    email: "jeancarlos2008@hotmail.com",
+    whatsapp: "(82) 9321-1989",
     photo: seller3,
     specialty: "Auxiliar de Escritório",
     experience: "Online",

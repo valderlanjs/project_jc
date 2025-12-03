@@ -11,7 +11,7 @@ const benefits = [
 
 const stats = [
   { icon: Users, value: "500+", label: "Clientes Satisfeitos" },
-  { icon: Target, value: "5+", label: "Anos de Experiência" },
+  { icon: Target, value: "10+", label: "Anos de Experiência" },
   { icon: Award, value: "100%", label: "Qualidade Garantida" }
 ];
 

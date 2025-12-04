@@ -258,19 +258,136 @@ export const Contact = () => {
         </div>
 
         {/* Additional Contact Info */}
+        {/* Additional Contact Info */}
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-6 text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Phone className="h-5 w-5 text-primary" />
-              <span className="text-sm">
-                Atendimento: Segunda a Sexta, 8h às 18h - Sábado 08h às 12h
+          <div
+            className="
+      inline-flex 
+      flex-col 
+      sm:flex-row 
+      items-center 
+      justify-center 
+      gap-4 
+      sm:gap-6 
+      text-muted-foreground 
+      px-4
+    "
+          >
+            {/* Horário de Atendimento */}
+            <div
+              className="
+        flex 
+        flex-col 
+        sm:flex-row 
+        items-center 
+        gap-2 
+        text-sm 
+        sm:text-base
+        w-full 
+        sm:w-auto
+        justify-center
+      "
+            >
+              <div className="flex items-center gap-2">
+                <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                <span className="font-medium text-foreground">
+                  Atendimento:
+                </span>
+              </div>
+              <div className="text-center sm:text-left">
+                <div className="text-sm">Segunda a Sexta, 8h às 18h</div>
+                <div className="text-sm">Sábado: 8h às 12h</div>
+              </div>
+            </div>
+
+            {/* Separador visível apenas em desktop */}
+            <div
+              className="
+        hidden 
+        sm:block 
+        w-1 
+        h-1 
+        bg-gray-300 
+        rounded-full 
+        flex-shrink-0
+      "
+            ></div>
+
+            {/* Separador para mobile */}
+            <div
+              className="
+        block 
+        sm:hidden 
+        w-32 
+        h-px 
+        bg-gradient-to-r 
+        from-transparent 
+        via-gray-300 
+        to-transparent
+      "
+            ></div>
+
+            {/* Email */}
+            <div
+              className="
+        flex 
+        flex-col 
+        sm:flex-row 
+        items-center 
+        gap-2 
+        text-sm 
+        sm:text-base
+        w-full 
+        sm:w-auto
+        justify-center
+      "
+            >
+              <Mail className="h-5 w-5 text-primary flex-shrink-0" />
+              <span
+                className="
+          text-primary 
+          hover:underline 
+          font-medium
+          break-all
+          text-center
+          px-2
+          max-w-full
+          overflow-hidden
+          text-ellipsis
+          hover:text-primary/80
+          transition-colors
+        "
+              >
+                contato@jeancarlos.com
               </span>
             </div>
-            <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
-            <div className="flex items-center gap-2">
-              <Mail className="h-5 w-5 text-primary" />
-              <span className="text-sm">contato@jeancarlos.com</span>
+          </div>
+
+          {/* Telefone Geral (opcional - se quiser adicionar) */}
+          <div className="mt-6 flex flex-col items-center gap-2">
+            <div className="text-sm text-muted-foreground">
+              Telefone Principal
             </div>
+            <a
+              onClick={() =>
+                window.open(
+                  "https://wa.me/558298295404?text=Olá! Vim pelo site e gostaria de falar com um especialista.",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              className="
+        text-lg 
+        font-bold 
+        text-primary 
+        hover:text-primary/80 
+        hover:underline 
+        transition-colors
+        cursor-pointer
+      "
+            >
+              (82) 99829-5404
+            </a>
           </div>
         </div>
       </div>

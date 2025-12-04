@@ -37,13 +37,13 @@ const services = [
     icon: Truck,
     title: "Entrega Rápida",
     description: "Logística eficiente para entrega no prazo em toda a região.",
-    features: ["Entregas urgentes", "Rastreamento", "Montagem inclusa"],
+    features: ["Entregas urgentes", "Rastreamento", "Orçamentos Rápidos"],
   },
   {
     icon: Shield,
     title: "Qualidade Garantida",
     description: "Produtos com certificação e garantia de qualidade superior.",
-    features: ["Garantia extendida", "Suporte técnico", "Assistência"],
+    features: ["Garantia de Qualidade", "Pedido Programado", "Assistência"],
   },
 ];
 

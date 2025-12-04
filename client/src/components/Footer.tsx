@@ -10,6 +10,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import logo1 from "../assets/logo3.png";
+
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -73,6 +74,13 @@ export const Footer = () => {
                   duration-300
                   group
                 "
+                 onClick={() =>
+                  window.open(
+                    "https://www.instagram.com/jean.vendas.premium/",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
               >
                 <Facebook
                   size={20}
@@ -80,7 +88,14 @@ export const Footer = () => {
                 />
               </a>
               <a
-                href="#"
+                
+                onClick={() =>
+                  window.open(
+                    "https://www.instagram.com/jean.vendas.premium/",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
                 className="
                   w-12 
                   h-12 
@@ -98,6 +113,7 @@ export const Footer = () => {
                   transition-all 
                   duration-300
                   group
+                  cursor-pointer
                 "
               >
                 <Instagram
@@ -105,7 +121,7 @@ export const Footer = () => {
                   className="text-background/80 group-hover:text-white"
                 />
               </a>
-              <a
+              {/*<a
                 href="#"
                 className="
                   w-12 
@@ -130,7 +146,7 @@ export const Footer = () => {
                   size={20}
                   className="text-background/80 group-hover:text-white"
                 />
-              </a>
+              </a>*/}
             </div>
           </div>
 
@@ -171,7 +187,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info - MANTENDO A MESMA ESTRUTURA */}
           <div>
             <h4 className="text-xl font-semibold mb-6 text-accent flex items-center gap-2">
               <div className="w-2 h-2 bg-accent rounded-full"></div>
@@ -184,9 +200,7 @@ export const Footer = () => {
                 </div>
                 <div>
                   <span className="text-background/80 block">Telefone</span>
-                  <span className="text-white font-medium">
-                    (82) 9829-5404
-                  </span>
+                  <span className="text-white font-medium">(82) 9829-5404</span>
                 </div>
               </li>
               <li className="flex items-start gap-3 group">
@@ -204,11 +218,21 @@ export const Footer = () => {
                 <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/30 transition-colors">
                   <MapPin size={18} className="text-accent" />
                 </div>
-                <div>
-                  <span className="text-background/80 block">Endereço</span>
-                  <span className="text-white font-medium">
-                    Av. Governador Lamenha Filho, 1800 - Quadra D, Lote 17 a 20 | Feitosa - Maceió - AL | 57043-600
+                <div className="min-w-0">
+                  <span className="text-background/80 block mb-1">
+                    Endereço
                   </span>
+                  <address className="text-white font-medium not-italic leading-snug text-sm sm:text-base">
+                    <div className="break-words hyphens-auto">
+                      Av. Governador Lamenha Filho, 1800
+                    </div>
+                    <div className="break-words hyphens-auto">
+                      Quadra D, Lote 17 a 20 | Feitosa
+                    </div>
+                    <div className="break-words hyphens-auto">
+                      Maceió - AL | 57043-600
+                    </div>
+                  </address>
                 </div>
               </li>
             </ul>
@@ -265,11 +289,11 @@ export const Footer = () => {
         <div className="pt-8 border-t border-background/20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-background/70 text-center md:text-left">
-              © {currentYear} Jean Carlos. Todos os direitos reservados.
+              © {currentYear} Jean Carlos Premium e Serviços. Todos os direitos reservados.
             </p>
 
-            <div className="flex items-center gap-4">
-              <span className="text-background/60 text-sm">
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+              <span className="text-background/60 text-sm text-center">
                 CNPJ: 40.484.468/0001-13
               </span>
               <button

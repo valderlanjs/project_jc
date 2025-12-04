@@ -185,7 +185,16 @@ export const Header = () => {
                 </a>
               ))}
               {/* Botão de Orçamento DENTRO do menu hambúrguer */}
-              <Button className="w-full bg-primary hover:bg-primary/90">
+              <Button
+                className="w-full bg-primary hover:bg-primary/90"
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/558298295404?text=Olá! Vim pelo site e gostaria de falar com um especialista.",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
                 Orçamento
               </Button>
             </div>

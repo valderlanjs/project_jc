@@ -31,7 +31,7 @@ const sellers = [
     experience: "Online",
   },
   {
-    name: "Iago Tailan",
+    name: "Hiago Albuquerque",
     email: "jeancarlos2008@hotmail.com",
     whatsapp: "(82) 9321-1989",
     photo: seller3,
